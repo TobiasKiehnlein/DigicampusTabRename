@@ -1,0 +1,19 @@
+{
+	"name": "sendfile.php auto renaming",
+	"version": "1.0",
+	"description": "Renames tabs containing files that are opened via the sendfile.php to the actual filename.",
+	"manifest_version": 3,
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"js": [
+				"webHandler.js"
+			],
+			"matches": [
+				"https://digicampus.uni-augsburg.de/*"
+			]
+		}
+	]
+}
